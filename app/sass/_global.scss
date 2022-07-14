@@ -1,0 +1,47 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: 'Druk Wide', monospace;
+}
+body {
+  margin: 0;
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: ($containerWidth+ $containerSidePadding) + px;
+  padding: 0 $containerSidePadding + px;
+
+  @media (max-width: $breakpoint-lg) {
+    max-width: 970px;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    max-width: 740px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    max-width: none;
+  }
+}
+
+.btn {
+  width: 232px;
+  height: 49px;
+  padding-bottom: 3px;
+  background-color: $blue;
+  border: none;
+  border-radius: 6px;
+
+  color: white;
+  font-family: 'Druk Wide Cyr';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
